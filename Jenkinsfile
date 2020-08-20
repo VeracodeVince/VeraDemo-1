@@ -14,8 +14,7 @@ pipeline {
                         curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
                         jar xf pipeline-scan-LATEST.zip pipeline-scan.jar
                         java -jar pipeline-scan.jar \
-                          --veracode_api_id "${VERACODE_API_ID}" \
-                          --veracode_api_key "${VERACODE_API_SECRET}" \
+                          --veracode_profile "credentials" \
                           --file "**/**.war" \
                           --project_name "${env.JOB_NAME}" \
                           --project_url "${env.GIT_URL}" \
