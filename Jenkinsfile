@@ -14,7 +14,6 @@ pipeline {
                         curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
                         7z.exe x pipeline-scan-LATEST.zip pipeline-scan.jar -y
                         java -jar pipeline-scan.jar \
-                          --veracode_profile "credentials" \
                           --file "target/verademo.war" \
                           --project_name "${env.JOB_NAME}" \
                           --project_url "${env.GIT_URL}" \
