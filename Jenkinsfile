@@ -15,7 +15,7 @@ pipeline {
                         C:\"Program Files"\7-Zip\7z.exe x pipeline-scan-LATEST.zip pipeline-scan.jar -y
                         java -jar pipeline-scan.jar \
                           --veracode_profile "credentials" \
-                          --file "**/**.war" \
+                          --file "target/verademo.war" \
                           --project_name "${env.JOB_NAME}" \
                           --project_url "${env.GIT_URL}" \
                           --project_ref "${env.GIT_COMMIT}" \
