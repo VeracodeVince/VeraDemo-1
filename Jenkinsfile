@@ -14,8 +14,8 @@ pipeline {
                         curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
                         jar xf pipeline-scan-LATEST.zip pipeline-scan.jar
                         java -jar pipeline-scan.jar \
-                          --veracode_api_id "57bbc77634c8f00dd89ea4fe0b9ef9c6" \
-                          --veracode_api_key "4eb31832346d1a8455b676f6dd76ef5f924449a59cf9cdae22a5cb3ef5599ffc6d24b24339eb65d992c05dab6cb4d133660ec60ff82985c6303df6f6727aa7dd" \
+                          --veracode_api_id "${VERACODE_API_ID}" \
+                          --veracode_api_key "${VERACODE_API_SECRET}" \
                           --file "build/libs/sample.jar" \
                           --fail_on_severity="Very High, High" \
                           --fail_on_cwe="80" \
