@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Maven Build') {
       steps {
-        - sh 'maven clean verify'
+            bat """\
+              mvn clean verify
+                """
       }
     }
     stage('Veracode Pipeline Scan') {
