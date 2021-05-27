@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+        vid = credentials('vid')
+        vkey = credentials('vkey')
+    }
   stages {
     stage('Maven Build') {
       steps {
