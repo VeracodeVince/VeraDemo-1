@@ -22,6 +22,7 @@ pipeline {
                           --veracode_api_key "${env.vkey}" \
                           --file "target/verademo.war" \
                           --fail_on_severity="Very High, High" \
+                          --issue_details true \
                           --project_name "${env.JOB_NAME}" \
                           --project_url "${env.GIT_URL}" \
                           --project_ref "${env.GIT_COMMIT}" \
