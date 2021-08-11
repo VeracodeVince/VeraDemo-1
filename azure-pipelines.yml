@@ -1,4 +1,12 @@
 #
+- task: Veracode@3
+  inputs:
+    ConnectionDetailsSelection: 'Endpoint'
+    AnalysisService: 'Veracode API'
+    veracodeAppProfile: '$(system.teamProject)'
+    version: '$(build.buildNumber)'
+    filepath: '$(build.artifactstagingdirectory)'
+    maximumWaitTime: '360'
 # Veracode pipeline for Azure showing Veracode ABS SCA and Veracode Pipeline Scan
 #
 
