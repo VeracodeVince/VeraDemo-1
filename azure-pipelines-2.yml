@@ -1,16 +1,27 @@
-# Maven
+resources:
+  pipelines:
+  - pipeline: asyncDemo   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+                            # e.g. to reference published artifacts
+    source: gregwolford.VeraDemo_async # Azure Pipelines name of the source pipeline referenced
+    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes# Maven
+
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- master
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
 - task: Maven@3
+- task: Veracode@3
+  inputs:
+    ConnectionDetailsSelection: 'Endpoint'
+    AnalysisService: 'Veracode API'
+    veracodeAppProfile: '$(system.teamProject)'
+    version: '$(build.buildNumber)'
+    filepath: '$(build.artifactstagingdirectory)'
+    maximumWaitTime: '360'
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
