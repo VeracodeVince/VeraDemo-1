@@ -16,12 +16,6 @@ steps:
 - task: Maven@3
 - task: Veracode@3
   inputs:
-    ConnectionDetailsSelection: 'Endpoint'
-    AnalysisService: 'Veracode API'
-    veracodeAppProfile: '$(system.teamProject)'
-    version: '$(build.buildNumber)'
-    filepath: '$(build.artifactstagingdirectory)'
-    maximumWaitTime: '360'
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
@@ -30,3 +24,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+    ConnectionDetailsSelection: 'Endpoint'
+    AnalysisService: 'Veracode API'
+    veracodeAppProfile: '$(system.teamProject)'
+    version: '$(build.buildNumber)'
+    filepath: '$(build.artifactstagingdirectory)'
+    maximumWaitTime: '360'
+    
