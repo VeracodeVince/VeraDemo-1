@@ -22,7 +22,6 @@ steps:
     version: '$(build.buildNumber)'
     filepath: '$(build.artifactstagingdirectory)'
     maximumWaitTime: '360'
-  inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
