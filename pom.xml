@@ -138,7 +138,7 @@
             <artifactId>srcclr-maven-plugin</artifactId>
 	    <configuration>
                 <!--- Add configuration details here-->
-                <apiToken>OptionallyEnterUserTokenHere</apiToken>
+                <!--<apiToken>OptionallyEnterUserTokenHere</apiToken>-->
 		<allow-dirty>true</allow-dirty>
 		<verbose>true</verbose>
            </configuration>
