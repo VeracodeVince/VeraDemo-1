@@ -148,7 +148,7 @@
                    <id>srcclr-scan</id>
                    <phase>verify</phase>
                    <goals>
-                       <goal>scan</goal>
+                       <goal>mvn clean compile com.srcclr:srcclr-maven-plugin:scan</goal>
                    </goals>
                </execution>
           </executions>
