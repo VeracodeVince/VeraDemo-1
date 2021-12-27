@@ -24,9 +24,9 @@ jobs:
       - name: Step 1 - Checkout main branch from GitHub 
         uses: actions/checkout@v2
 
-#       # Runs a single command using the runners shell
-#       - name: Run a one-line script
-#         run: mvn clean compile com.srcclr:srcclr-maven-plugin:scan
+      # Runs a single command using the runners shell
+      - name: Set API token
+        run: set SRCCLR_API_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODg3LCJleHAiOjE2NDA2MzMxNTksImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJjMmY4ZTAzMC01NWExLTQyMGYtYTU3MS02OGIwMTFiNTA0NzAiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.EXNbJMk20Eu550mplu4VWZRe8U2BDCbCG_f70F0pjgUxoO3A9jkFFYiWAgIW-HpYKKkPK3QyEryIYDhLTpnXdDx8uTKzUxWF5-2AYuOphWu9opU2LDgcdmkFCd9cFY_CMugKby-Qp9uzPswkP774_BmML_nfohGTML7mc6b4wJw
 
       # Runs a set of commands using the runners shell
       - name: Build maven project 
