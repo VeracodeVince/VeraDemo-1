@@ -139,8 +139,8 @@
 	    <configuration>
                 <!--- Add configuration details here-->
                 <apiToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODg3LCJleHAiOjE2NDA2MzQ0MDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiIyNjRlOTg4Zi05MjUzLTQ1YjYtODg2NS05YTkyZDU0NWQyMTIiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.Llx4WISVcxYrZ0wpMuTXgVp7rYoj-zUhDjGP28kzAiq4L14LCJIBbAeolv25FJpck2H1D_EzgOPptdjt0gb6lR2r1m3oTInHuNOGq4Ykv19Nt03oRx9euj914thHNELa0NwX_bfHG5FYNbHfNQEuO7EyiZ2SNQvqGAxUD-hhCtY</apiToken>
-		<allow-dirty>true</allow-dirty>
-		<verbose>true!</verbose>
+<!-- 		<allow-dirty>true</allow-dirty>
+		<verbose>true!</verbose> -->
            </configuration>
             <executions>
                <execution>
