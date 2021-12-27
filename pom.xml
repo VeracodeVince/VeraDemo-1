@@ -132,6 +132,21 @@
         <path>/${project.artifactId}</path>
         </configuration>
       </plugin>
+	    
+	<plugin>
+            <groupId>com.srcclr</groupId>
+            <artifactId>srcclr-maven-plugin</artifactId>
+            <version>3.7.74</version>
+           <executions>
+               <execution>
+                   <id>srcclr-scan</id>
+                   <phase>verify</phase>
+                   <goals>
+                       <goal>scan</goal>
+                   </goals>
+               </execution>
+          </executions>
+        </plugin>	    
     </plugins>
     
   </build>
