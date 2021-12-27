@@ -136,7 +136,7 @@
 	<plugin>
             <groupId>com.srcclr</groupId>
             <artifactId>srcclr-maven-plugin</artifactId>
-            <version>3.7.74</version>
+            <version>3.7.50</version>
            <executions>
                <execution>
                    <id>srcclr-scan</id>
