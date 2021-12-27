@@ -138,9 +138,7 @@
             <artifactId>srcclr-maven-plugin</artifactId>
 	    <configuration>
                 <!--- Add configuration details here-->
-                <apiToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODg3LCJleHAiOjE2NDA2MzQ0MDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiIyNjRlOTg4Zi05MjUzLTQ1YjYtODg2NS05YTkyZDU0NWQyMTIiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.Llx4WISVcxYrZ0wpMuTXgVp7rYoj-zUhDjGP28kzAiq4L14LCJIBbAeolv25FJpck2H1D_EzgOPptdjt0gb6lR2r1m3oTInHuNOGq4Ykv19Nt03oRx9euj914thHNELa0NwX_bfHG5FYNbHfNQEuO7EyiZ2SNQvqGAxUD-hhCtY</apiToken>
-<!-- 		<allow-dirty>true</allow-dirty>
-		<verbose>true!</verbose> -->
+                <apiToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODk1LCJleHAiOjE2NDA2NDE4NTIsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiI2MWJjMTFiNC03MjJiLTRkMTAtYTM1Mi1mZDZhNDZjYWNhOTkiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.cnTmKdT1oOiPL_izVC9F_OHX1dojWrIqJ_paGxobJfHxjYAjpfMphjduTxXNXRSWQkkZvjc8uXPqR35GHV5xyrTa4D_59xtv4ro-516hperRCmdK2ggp3yOFThcX_scQc80Y-V6iBmIh2vghKHQYIqB8GXB35AwV8c8sbl4C7ug</apiToken>
            </configuration>
             <executions>
                <execution>
