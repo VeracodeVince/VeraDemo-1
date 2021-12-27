@@ -136,10 +136,9 @@
 	<plugin>
             <groupId>com.srcclr</groupId>
             <artifactId>srcclr-maven-plugin</artifactId>
-<!-- 	    <version>3.1.21</version> -->
 	    <configuration>
                 <!--- Add configuration details here-->
-                <apiToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODg3LCJleHAiOjE2NDA2MzA4NzksImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiIwN2I3ZWEwNC03YTlmLTRhZDctOGU1OS01YzNkZGMxOTRkNDUiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.Z5Lu1pJj8gOhN9Rjww2qe9iIWc3aDmNi2NevOL0ch0XSE4cMQed21VooUlw9cAhSgNs2gmhR3LY0Ep-bGQ4Ha6eEtGI1Y_48z_6hNBgI0jqNP7YWS5LUUxg2JBcTZLdyUV6bsaTfZLAi2pDQALhiJAeq7Ls6_XWUIKLZnifaq2E</apiToken>
+                <apiToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQzODg3LCJleHAiOjE2NDA2MzQ0MDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiIyNjRlOTg4Zi05MjUzLTQ1YjYtODg2NS05YTkyZDU0NWQyMTIiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.Llx4WISVcxYrZ0wpMuTXgVp7rYoj-zUhDjGP28kzAiq4L14LCJIBbAeolv25FJpck2H1D_EzgOPptdjt0gb6lR2r1m3oTInHuNOGq4Ykv19Nt03oRx9euj914thHNELa0NwX_bfHG5FYNbHfNQEuO7EyiZ2SNQvqGAxUD-hhCtY</apiToken>
 		<allow-dirty>true</allow-dirty>
 		<verbose>true</verbose>
            </configuration>
@@ -148,7 +147,7 @@
                    <id>srcclr-scan</id>
                    <phase>verify</phase>
                    <goals>
-                       <goal>mvn clean compile com.srcclr:srcclr-maven-plugin:scan</goal>
+                       <goal>scan</goal>
                    </goals>
                </execution>
           </executions>
